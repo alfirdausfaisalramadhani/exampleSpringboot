@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: mycompany
+  datasource:
+    password: root
+    url: jdbc:postgresql://localhost:5432/mycompany
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
